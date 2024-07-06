@@ -1,0 +1,7 @@
+tweepy
+bs4==0.0.1
+requests==2.22.0
+requests[socks]
+peewee==3.13.2
+pyyaml==5.3.1
+pymysql==0.9.3
