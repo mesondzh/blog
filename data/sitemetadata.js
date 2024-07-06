@@ -13,6 +13,7 @@ const siteMetadata = {
   repoId:"R_kgDOMRuGcA",
   categoryId: "DIC_kwDOMRuGcM4CglXy",
   avatar: "/static/favicons/avatar.png",
+  cover: "/static/favicons/cover.png",
   email: "cva.engineer.ding@gmail.com",
   github: "mesondzh",
   twitter: "mesondzh",

@@ -10,7 +10,7 @@ export async function GET() {
     generator: "Node-RSS feed generator",
     feed_url: `${siteMetadata.siteUrl}/rss`,
     site_url: siteMetadata.siteUrl,
-    image_url: `${siteMetadata.siteUrl}${siteMetadata.avatar}`,
+    image_url: `${siteMetadata.siteUrl}${siteMetadata.cover}`,
     docs: siteMetadata.siteUrl,
     language: siteMetadata.language,
     copyright: "CC BY-NC-SA 4.0",
