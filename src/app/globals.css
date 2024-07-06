@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  word-break: break-word;
+}
+
+
+.katex {
+  font: normal 1.21em KaTeX_Main, serif;
+  line-height: 1.2;
+  white-space: normal;
+  text-indent: 0;
+}
+
+.prose a {
+  @apply transition-all;
+}
+
+
+span::selection {
+  background-color: #00a8dc42;
+}
+
+.prose :where(blockquote) {
+  font-style: normal;
+}
+
+figcaption {
+  text-align: center;
+}
+
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
