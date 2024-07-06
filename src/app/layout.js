@@ -28,7 +28,7 @@ export const metadata = {
     title: siteMetadata.title,
     description: siteMetadata.description,
     url: siteMetadata.siteUrl,
-    siteName: siteMetadata.siteName,
+    siteName: siteMetadata.publishName,
     locale: siteMetadata.language,
   },
 };

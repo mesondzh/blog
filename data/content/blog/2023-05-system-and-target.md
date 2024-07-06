@@ -1,7 +1,8 @@
 ---
 title: 系统和目标
+featured: true
 tags:
-  - 便签
+  - memo
 publishDate: 2023-05-29
 description: 我们需要的是系统，而不是目标
 ---

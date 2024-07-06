@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link href="/" aria-label={siteMetadata.publishName}>
             <div className="flex items-center justify-between">
               <div className="text-xl whitespace-nowrap font-semibold rounded-lg sm:block text-zinc-800 hover:bg-zinc-50 dark:hover:bg-slate-900 dark:text-zinc-200 select-none tracking-tight transition px-3 py-1 duration-400">
-                {siteMetadata.publishName}
+                Home
               </div>
             </div>
           </Link>
@@ -31,7 +31,7 @@ export default function Navbar() {
                 key={link.title}
                 href={link.href}
                 className={`rounded-lg px-3 py-2 font-normal  hover:bg-zinc-50 hover:text-cyan-500 dark:hover:bg-slate-900 transition trasnform duration-400 select-none ${
-                  pathname == link.href
+                  pathname === link.href
                     ? "text-cyan-500 font-semibold"
                     : "text-zinc-500 dark:text-zinc-300"
                 }`}

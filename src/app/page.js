@@ -17,14 +17,18 @@ export default function Home() {
 
   return (
     <div>
-      <div className="mx-auto max-w-2xl py-28 max-h-screen mt-8">
-        <h1 className="text-2xl font-semibold py-8">
-          {siteMetadata.headerTitle}
-        </h1>
-        <p className="text-xl">{siteMetadata.description}</p>
+      <div className="mx-auto max-w-screen-sm py-2 max-h-screen mt-2">
+        <Image
+            src={siteMetadata.cover}
+            alt='Avatar'
+            width="0"
+            height="0"
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto'}}>
+        </Image>
       </div>
 
-      <div className="relative lg:grid lg:grid-cols-9 lg:gap-8 pt-12 max-w-6xl">
+      <div className="relative lg:grid lg:grid-cols-9 lg:gap-8 pt-0 max-w-6xl">
         <div className="max-w-4xl mx-auto col-span-7">
           <h2 className="pt-16 prose-h2 font-semibold">Featured</h2>
           <div className="py-4 mb-2 md:grid md:grid-cols-2 md:gap-4 lg:gap-8">
@@ -75,7 +79,7 @@ export default function Home() {
         </div>
         <div className="col-span-2 max-w-lg mx-auto">
           <div className="sticky top-0 pt-12">
-            <h2 className="font-semibold prose-h2">About Author</h2>
+            <h2 className="font-semibold prose-h2" style={{ textAlign: 'center' }}>About Author</h2>
             <Link href="/about">
               <Image
                 src={siteMetadata.avatar}

@@ -186,7 +186,7 @@ export default async function PostPage({ params }) {
             <Comments />
           </article>
           <Link
-            href={`https://github.com/${siteMetadata.github}/${siteMetadata.siteRepo}/blob/master/data/content${post.urlslug}.md`}
+            href={`https://github.com/${siteMetadata.github}/${siteMetadata.siteRepo}/blob/main/data/content${post.urlslug}.md`}
             target="_blank"
           >
             <p className="text-right py-2 text-sm  text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-200 transition duration-400">
@@ -226,7 +226,7 @@ export default async function PostPage({ params }) {
         </div>
         <div className="col-span-2 mx-auto">
           <div>
-            <h2 className="font-semibold prose-h2 mt-6">About Author</h2>
+            <h2 className="font-semibold prose-h2 mt-6" style={{ textAlign: 'center' }}>About Author</h2>
             <Link href="/about">
             <Image
               src={siteMetadata.avatar}
